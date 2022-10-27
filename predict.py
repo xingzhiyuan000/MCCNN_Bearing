@@ -90,7 +90,14 @@ if __name__ == '__main__':
     # root = "./testset/0"  # 数据集所在根目录
     # root = "./testset/1"  # 数据集所在根目录
     # root = "./testset/2"  # 数据集所在根目录
-    root = "./testset/3"  # 数据集所在根目录
+    # root = "./testset/3"  # 数据集所在根目录
+    # root = "./testset/0_snr_-4"  # 数据集所在根目录
+    # root = "./testset/0_snr_-2"  # 数据集所在根目录
+    # root = "./testset/0_snr_0"  # 数据集所在根目录
+    root = "./testset/0_snr_2"  # 数据集所在根目录
+    # root = "./testset/0_snr_4"  # 数据集所在根目录
+    # root = "./testset/0_snr_6"  # 数据集所在根目录
+    # root = "./testset/0_snr_8"  # 数据集所在根目录
 
     train_images_path, train_images_label, val_images_path, val_images_label = read_split_data(root)
 

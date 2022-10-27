@@ -30,7 +30,7 @@ epoch = 1000
 learing_rate=1e-3 #学习速率
 #准备数据集
 #加载自制数据集
-root = ".\dataset/0"  # 数据集所在根目录
+root = ".\dataset/2"  # 数据集所在根目录
 train_images_path, train_images_label, val_images_path, val_images_label = read_split_data(root)
 
 
