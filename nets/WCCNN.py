@@ -39,12 +39,15 @@ class WCCNN(nn.Module):
 
         self.flatten = nn.Flatten()
         self.fc1 = nn.Linear(in_features=8 * 14, out_features=13, bias=True)
+        self.dropout = nn.Dropout(p=0.4)
+
     def forward(self, x):
         x=torch.cat((self.conv01(x),self.conv02(x),self.conv03(x)),-1)
         x=self.conv_bn_relu_maxpool1(x)
         x=self.conv_bn_relu_maxpool2(x)
         x=self.conv_bn_relu_maxpool3(x)
         x = self.flatten(x)
+        x = self.dropout(x)
         x = self.fc1(x)
 
         return x
